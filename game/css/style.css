@@ -1,0 +1,42 @@
+/* Lumen Runes page chrome: a dark night frame around the game canvas. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #050816;
+  min-height: 100vh;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+canvas#game {
+  display: block;
+  width: min(1280px, 100vw - 24px);
+  height: auto;
+  aspect-ratio: 1280 / 720;
+  border-radius: 14px;
+  box-shadow: 0 0 0 1px rgba(150, 190, 255, 0.25), 0 24px 70px rgba(0, 0, 0, 0.65);
+  background: #070a1e;
+  touch-action: none;
+  cursor: pointer;
+}
+
+p.hint {
+  margin: 0;
+  color: rgba(220, 232, 255, 0.6);
+  font-size: 13px;
+  text-align: center;
+}
